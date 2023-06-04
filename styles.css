@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 4.3em;
+  background-color: #fff;
+  /* border-bottom: 1px solid #c2c2c2; */
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.main-nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1.5em;
+  padding: 1em 1em;
+}
+
+.main-nav ul li a {
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-nav ul li {
+  position: relative;
+}
+
+.main-nav ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background-color: #0a7cff;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.main-nav ul li:hover::after {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 5.5em 4.3em;
+}
+
+.login-form .tag-line {
+  font-size: 5rem;
+  font-weight: 500;
+  color: #0a7cff;
+  line-height: 1em;
+  margin-bottom: 0.4em;
+}
+
+.motto {
+  font-size: 1.02rem;
+  color: #595959;
+  line-height: 1.6em;
+  margin-bottom: 1.7em;
+}
+
+.login-btn {
+  background-color: #0a7cff;
+  border: 1px solid #0084ff;
+  color: #fff;
+  padding: 0.5em 1.2em;
+  border-radius: 24px;
+  font-size: 1rem;
+  margin-bottom: 1.7em;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+background-color: #4267b2;
+}
+
+.switch {
+  font-size: 0.8rem;
+  color: #0a7cff;
+  margin-bottom: 1.7em;
+}
+
+.get-in-from-microsoft {
+  height: 40px;
+}
+
+.download-in-app-store {
+  height: 40px;
+}
+
+.sample-image {
+  width: 700px;
+}
+
+.from-meta {
+  width: 150px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  padding: 0 6em;
+}
+
+.footer-nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 1.5em;
+  padding: 1em 1em;
+}
+
+.footer-nav ul li a {
+  color: #000;
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-size: inherit;
+}
